@@ -39,7 +39,17 @@ public class BST<Undefined extends Comparable<Undefined>>
     // inserted is less than the data at the current node, go right if the data 
     private Node<Undefined> insert(Node<Undefined> root, Undefined data)
     {
+        if (root == null)
+        {
+            return new Node<Undefined>(data);
 
+            int comparison = root.getData().compareTo(data);
+
+            if (comparison < 0)
+                root.left = insert(root.left, data);
+            else if (comparison > 0)
+                root.right = insert(root.right, data);
+        }
     }
 
     public void delete(Undefined data)

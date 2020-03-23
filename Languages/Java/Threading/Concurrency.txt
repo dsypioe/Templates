@@ -1,0 +1,31 @@
+Java Concurrency
+
+Concurrency is the ability to do more than one thing at the same time
+
+Concurrency does not mean multiple applicaitons specifically.  Running multiple parts of a single applicaiton simultaneously is also termed as concurrency.
+For example:
+    A word processor formats the text and responds to keyboard events at the same time 
+    An audio streaming app reeads the audio from the network, decompresses it and updates teh display, all at the same time
+    A web server, which is a program running on a computer, serves thousands of requests from all over the world at the same time.
+
+Software that is able to do more than one thing at a time is called a concurrent Software
+
+Concurrency does not imply parallel execution.
+When we say that multiple tasks are executing at the same time, we mean that is multiple tasks are making progress during the same period of time
+
+The tasks are execured in an interleaved manner, the os swithces between tasks so frequently that it appears to the users that they are being executed at the same physical instant.
+
+Therefore, concurrency does not mean parallelism. In fact, Parallelism is impossible on a single processor system
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class ThreadExample extends Thread
+{
+
+}
